@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/sword-gesture1.ogg-a33e992b24ff394bd21af0287bb000c5.oggstr"
+
+[deps]
+
+source_file="res://entities/player/sounds/sword-gesture1.ogg"
+dest_files=[ "res://.import/sword-gesture1.ogg-a33e992b24ff394bd21af0287bb000c5.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

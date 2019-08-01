@@ -1,0 +1,39 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://entities/npc/npc pngs/potionseller1.png" type="Texture" id=1]
+[ext_resource path="res://entities/npc/npc pngs/potionseller2.png" type="Texture" id=2]
+[ext_resource path="res://entities/npc/npc pngs/potionseller3.png" type="Texture" id=3]
+[ext_resource path="res://entities/npc/npc pngs/potionseller4.png" type="Texture" id=4]
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 37.7121, 25.6399 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 11.2052, 16 )
+
+[node name="PotionSeller" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="StaticBody2D"]
+frames = SubResource( 3 )
+frame = 2
+playing = true
+
+[node name="Area2D" type="Area2D" parent="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/Area2D"]
+position = Vector2( 0.788902, -9.30897 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource( 2 )
+

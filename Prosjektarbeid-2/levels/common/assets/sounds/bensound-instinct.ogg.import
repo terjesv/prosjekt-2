@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bensound-instinct.ogg-ebab8d35b4d2621fcc85c82721bc84b8.oggstr"
+
+[deps]
+
+source_file="res://levels/common/assets/sounds/bensound-instinct.ogg"
+dest_files=[ "res://.import/bensound-instinct.ogg-ebab8d35b4d2621fcc85c82721bc84b8.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

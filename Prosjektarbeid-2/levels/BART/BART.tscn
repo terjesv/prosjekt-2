@@ -1,0 +1,172 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://levels/BART/BART.gd" type="Script" id=1]
+[ext_resource path="res://levels/BART/balloon_red.png" type="Texture" id=2]
+
+[node name="Node" type="Node"]
+script = ExtResource( 1 )
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="BalloonSprite" type="Sprite" parent="PanelContainer"]
+position = Vector2( 270, 150 )
+texture = ExtResource( 2 )
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 537.0
+margin_bottom = 299.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/MarginContainer"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 520.0
+margin_bottom = 43.0
+size_flags_horizontal = 3
+size_flags_vertical = 0
+custom_constants/separation = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/HBoxContainer"]
+margin_right = 418.0
+margin_bottom = 33.0
+size_flags_horizontal = 3
+custom_constants/separation = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/MarginContainer/HBoxContainer/VBoxContainer"]
+margin_right = 418.0
+margin_bottom = 14.0
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
+margin_right = 39.0
+margin_bottom = 14.0
+text = "Score:"
+
+[node name="ScoreLabel" type="Label" parent="PanelContainer/MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
+margin_left = 43.0
+margin_right = 51.0
+margin_bottom = 14.0
+size_flags_horizontal = 2
+text = "0"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="PanelContainer/MarginContainer/HBoxContainer/VBoxContainer"]
+margin_top = 19.0
+margin_right = 418.0
+margin_bottom = 33.0
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer2"]
+margin_right = 44.0
+margin_bottom = 14.0
+text = "Round:"
+
+[node name="RoundLabel" type="Label" parent="PanelContainer/MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer2"]
+margin_left = 48.0
+margin_right = 56.0
+margin_bottom = 14.0
+size_flags_horizontal = 2
+text = "1"
+
+[node name="Label2" type="Label" parent="PanelContainer/MarginContainer/HBoxContainer"]
+margin_left = 423.0
+margin_right = 497.0
+margin_bottom = 14.0
+size_flags_vertical = 0
+text = "Total score:"
+
+[node name="TotalScoreLabel" type="Label" parent="PanelContainer/MarginContainer/HBoxContainer"]
+margin_left = 502.0
+margin_right = 510.0
+margin_bottom = 14.0
+size_flags_vertical = 0
+text = "0"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="PanelContainer/MarginContainer"]
+margin_left = 10.0
+margin_top = 262.0
+margin_right = 520.0
+margin_bottom = 282.0
+size_flags_vertical = 8
+custom_constants/separation = 10
+
+[node name="PumpButton" type="Button" parent="PanelContainer/MarginContainer/HBoxContainer2"]
+margin_right = 250.0
+margin_bottom = 20.0
+focus_mode = 0
+size_flags_horizontal = 3
+enabled_focus_mode = 0
+text = "PUMP"
+
+[node name="CollectButton" type="Button" parent="PanelContainer/MarginContainer/HBoxContainer2"]
+margin_left = 260.0
+margin_right = 510.0
+margin_bottom = 20.0
+focus_mode = 0
+size_flags_horizontal = 3
+enabled_focus_mode = 0
+text = "COLLECT"
+
+[node name="Popup" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
+margin_left = 210.0
+margin_top = 124.0
+margin_right = 319.0
+margin_bottom = 168.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+custom_constants/separation = 10
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/Popup"]
+margin_right = 109.0
+margin_bottom = 14.0
+text = "POP! Reward lost"
+
+[node name="OKButton" type="Button" parent="PanelContainer/MarginContainer/Popup"]
+margin_top = 24.0
+margin_right = 109.0
+margin_bottom = 44.0
+size_flags_horizontal = 3
+size_flags_vertical = 4
+text = "OK"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
+margin_left = 183.0
+margin_top = 80.0
+margin_right = 347.0
+margin_bottom = 211.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+custom_constants/separation = 23
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer"]
+margin_right = 164.0
+margin_bottom = 14.0
+text = "Finished. Your final score:"
+align = 1
+
+[node name="ScoreLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer"]
+margin_top = 37.0
+margin_right = 164.0
+margin_bottom = 51.0
+align = 1
+
+[node name="RiskLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer"]
+margin_top = 74.0
+margin_right = 164.0
+margin_bottom = 88.0
+align = 1
+
+[node name="NextButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer"]
+margin_top = 111.0
+margin_right = 164.0
+margin_bottom = 131.0
+text = "CONTINUE"
+
+[connection signal="pressed" from="PanelContainer/MarginContainer/HBoxContainer2/PumpButton" to="." method="_on_PumpButton_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/HBoxContainer2/CollectButton" to="." method="_on_CollectButton_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/Popup/OKButton" to="." method="_on_OKButton_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/NextButton" to="." method="_on_NextButton_pressed"]

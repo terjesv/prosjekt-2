@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bensound-betterdays.ogg-cbf4533fb2091d27cc96a0c4193ae42f.oggstr"
+
+[deps]
+
+source_file="res://levels/common/assets/sounds/bensound-betterdays.ogg"
+dest_files=[ "res://.import/bensound-betterdays.ogg-cbf4533fb2091d27cc96a0c4193ae42f.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

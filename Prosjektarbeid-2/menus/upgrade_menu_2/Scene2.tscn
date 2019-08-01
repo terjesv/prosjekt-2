@@ -1,0 +1,36 @@
+[gd_scene format=2]
+
+[node name="Scene2" type="VBoxContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Label" type="Label" parent="."]
+margin_right = 544.0
+margin_bottom = 14.0
+text = "We want to:"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_top = 18.0
+margin_right = 544.0
+margin_bottom = 258.0
+size_flags_vertical = 3
+bbcode_enabled = true
+bbcode_text = "Read contacts (required)
+Read call log
+Read SMS"
+text = "Read contacts (required)
+Read call log
+Read SMS"
+
+[node name="ManageButton" type="Button" parent="."]
+margin_top = 262.0
+margin_right = 544.0
+margin_bottom = 282.0
+text = "MANAGE"
+
+[node name="AgreeButton" type="Button" parent="."]
+margin_top = 286.0
+margin_right = 544.0
+margin_bottom = 306.0
+text = "AGREE & CONTINUE"
+

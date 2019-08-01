@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Arrowswosh.ogg-e82c95848e9b8d8a1020832475bad548.oggstr"
+
+[deps]
+
+source_file="res://entities/player/sounds/Arrowswosh.ogg"
+dest_files=[ "res://.import/Arrowswosh.ogg-e82c95848e9b8d8a1020832475bad548.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

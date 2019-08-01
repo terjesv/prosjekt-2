@@ -1,0 +1,50 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://entities/eye creature/skull/Skull.tscn" type="PackedScene" id=1]
+[ext_resource path="res://entities/enemies/enemy.tscn" type="PackedScene" id=2]
+[ext_resource path="res://entities/player/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://levels/common/assets/warped_city/warped_city_platform_tiles.tres" type="TileSet" id=4]
+[ext_resource path="res://entities/enemies/goblin.tscn" type="PackedScene" id=5]
+
+[node name="Node" type="Node" index="0"]
+
+[node name="Skull" parent="." index="0" instance=ExtResource( 1 )]
+
+position = Vector2( 144, 288 )
+level = 1
+
+[node name="enemy" parent="." index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 112.462, 298.331 )
+
+[node name="Player" parent="." index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 390, 250 )
+
+[node name="TileMap" type="TileMap" parent="." index="3"]
+
+z_index = -1
+mode = 0
+tile_set = ExtResource( 4 )
+cell_size = Vector2( 16, 16 )
+cell_quadrant_size = 32
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( -262120, 0, 0, 1310725, 0, 0, 1310726, 1, 0, 1310727, 1, 0, 1310728, 1, 0, 1310729, 1, 0, 1310730, 1, 0, 1310731, 2, 0, 1572875, 0, 0, 1572876, 1, 0, 1572877, 1, 0, 1572878, 1, 0, 1572879, 1, 0, 1572880, 1, 0, 1572881, 1, 0, 1572882, 1, 0, 1572883, 1, 0, 1572884, 1, 0, 1572885, 1, 0, 1572886, 1, 0, 1572887, 1, 0, 1572888, 1, 0, 1572889, 1, 0, 1572890, 1, 0, 1572891, 1, 0, 1572892, 1, 0, 1572893, 1, 0, 1572894, 1, 0, 1572895, 1, 0, 1572896, 1, 0, 1572897, 1, 0, 1572898, 1, 0, 1572899, 1, 0, 1572900, 1, 0, 1572901, 1, 0, 1572902, 1, 0, 1572903, 1, 0, 1572904, 2, 0, 1638402, 0, 0, 1638403, 1, 0, 1638404, 1, 0, 1638405, 1, 0, 1638406, 1, 0, 1638407, 1, 0, 1638408, 1, 0, 1638409, 1, 0, 1638410, 2, 0 )
+_sections_unfolded = [ "Cell" ]
+
+[node name="goblin" parent="." index="4" instance=ExtResource( 5 )]
+
+position = Vector2( 210, 350 )
+
+

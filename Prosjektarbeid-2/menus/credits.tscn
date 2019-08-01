@@ -1,0 +1,99 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://menus/credits.gd" type="Script" id=1]
+[ext_resource path="res://menus/elianto_48.tres" type="DynamicFont" id=2]
+[ext_resource path="res://menus/elianto_20.tres" type="DynamicFont" id=3]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 30.0
+custom_constants/separation = 20
+
+[node name="Back" type="Button" parent="VBoxContainer"]
+margin_left = 209.0
+margin_right = 335.0
+margin_bottom = 54.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 2 )
+text = "Back"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer"]
+margin_top = 74.0
+margin_right = 544.0
+margin_bottom = 274.0
+rect_min_size = Vector2( 500, 200 )
+custom_fonts/normal_font = ExtResource( 3 )
+bbcode_enabled = true
+bbcode_text = " [center] 
+Music: « Better Days » from Bensound.com
+Music: « Relaxing » from Bensound.com
+Music: « Birth of a Hero» from Bensound.com
+Music: « Epic » from Bensound.com
+Music: « Instinct » from Bensound.com
+Music: « The Duel » from Bensound.com
+Music: « Love » from Bensound.com
+Music: « Ofelia’s Dream » from Bensound.com
+
+Background: « Parallax Forest » from Ansimuz (cc4)
+Background: « Magic Cliffs Environment » from Ansimuz (cc0)
+
+Elianto font: 
+https://www.dafontfree.io/elianto-font-free/
+
+Arrow sound: 
+https://www.freesoundeffects.com/free-sounds/arrow-10072/
+
+Punch sound: 
+http://soundbible.com/tags-punch.html
+
+End level picture: 
+https://wall.alphacoders.com/big.php?i=921277
+
+Special thanks to:
+Floating Skull Enemy: Will Tice, unTied Games
+Opengameart.org
+Godot Engine
+
+
+ [/center] "
+text = "  
+Music: « Better Days » from Bensound.com
+Music: « Relaxing » from Bensound.com
+Music: « Birth of a Hero» from Bensound.com
+Music: « Epic » from Bensound.com
+Music: « Instinct » from Bensound.com
+Music: « The Duel » from Bensound.com
+Music: « Love » from Bensound.com
+Music: « Ofelia’s Dream » from Bensound.com
+
+Background: « Parallax Forest » from Ansimuz (cc4)
+Background: « Magic Cliffs Environment » from Ansimuz (cc0)
+
+Elianto font: 
+https://www.dafontfree.io/elianto-font-free/
+
+Arrow sound: 
+https://www.freesoundeffects.com/free-sounds/arrow-10072/
+
+Punch sound: 
+http://soundbible.com/tags-punch.html
+
+End level picture: 
+https://wall.alphacoders.com/big.php?i=921277
+
+Special thanks to:
+Floating Skull Enemy: Will Tice, unTied Games
+Opengameart.org
+Godot Engine
+
+
+  "
+
+[connection signal="pressed" from="VBoxContainer/Back" to="." method="_on_Button_pressed"]

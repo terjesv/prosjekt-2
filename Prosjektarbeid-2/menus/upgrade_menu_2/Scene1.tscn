@@ -1,0 +1,25 @@
+[gd_scene format=2]
+
+[node name="Scene1" type="VBoxContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Label" type="Label" parent="."]
+margin_right = 544.0
+margin_bottom = 258.0
+size_flags_vertical = 3
+text = "To receive the sword upgrade we need some new permissions"
+autowrap = true
+
+[node name="ExitButton" type="Button" parent="."]
+margin_top = 262.0
+margin_right = 544.0
+margin_bottom = 282.0
+text = "REJECT AND RETURN TO GAME"
+
+[node name="Scene1Button" type="Button" parent="."]
+margin_top = 286.0
+margin_right = 544.0
+margin_bottom = 306.0
+text = "CONTINUE"
+

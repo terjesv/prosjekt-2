@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://menus/upgrade_menu_3/Scene2.gd" type="Script" id=1]
+[ext_resource path="res://ui/flowchart_menus/BG_white_grey-border.tres" type="StyleBox" id=2]
+
+[node name="Scene2" type="VBoxContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_right = 544.0
+margin_bottom = 14.0
+text = "We want to:"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_top = 18.0
+margin_right = 544.0
+margin_bottom = 263.0
+size_flags_vertical = 3
+
+[node name="InfoButton" type="Button" parent="."]
+margin_top = 267.0
+margin_right = 544.0
+margin_bottom = 282.0
+custom_styles/hover = ExtResource( 2 )
+custom_styles/pressed = ExtResource( 2 )
+custom_styles/focus = ExtResource( 2 )
+custom_styles/disabled = ExtResource( 2 )
+custom_styles/normal = ExtResource( 2 )
+custom_colors/font_color_disabled = Color( 0.546875, 0.546875, 0.546875, 1 )
+custom_colors/font_color = Color( 0.546875, 0.546875, 0.546875, 1 )
+custom_colors/font_color_hover = Color( 0.546875, 0.546875, 0.546875, 1 )
+text = "MORE INFO"
+
+[node name="AgreeButton" type="Button" parent="."]
+margin_top = 286.0
+margin_right = 544.0
+margin_bottom = 306.0
+text = "AGREE & CONTINUE"
+

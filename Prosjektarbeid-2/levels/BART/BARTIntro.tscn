@@ -1,0 +1,155 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://levels/BART/BARTIntro.gd" type="Script" id=1]
+
+[node name="Node" type="Node" index="0"]
+
+script = ExtResource( 1 )
+
+[node name="PanelContainer" type="PanelContainer" parent="." index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 537.0
+margin_bottom = 299.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+_sections_unfolded = [ "custom_constants" ]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 520.0
+margin_bottom = 282.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_constants/separation = 10
+alignment = 0
+_sections_unfolded = [ "custom_constants" ]
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 510.0
+margin_bottom = 14.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 0
+text = "BALLOON GAME"
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Size Flags" ]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="PanelContainer/MarginContainer/VBoxContainer" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 24.0
+margin_right = 510.0
+margin_bottom = 242.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 3
+bbcode_enabled = true
+bbcode_text = "You will see 10 different balloons, one at a time. Inflate each balloon as much as you can without popping it. Larger balloons give a higher reward.
+
+You will always have two options:
+
+(1) Inflate the balloon by one pump. If the balloon does not pop, the reward gets larger. If the balloon pops you get no reward for that balloon and will move on to the next balloon.
+
+(2) Collect the reward for the current balloon. The reward gets added to your total score and you move on to the next balloon.
+
+Try to get the highest score you can. Know that every balloon is different and may pop at different sizes."
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "You will see 10 different balloons, one at a time. Inflate each balloon as much as you can without popping it. Larger balloons give a higher reward.
+
+You will always have two options:
+
+(1) Inflate the balloon by one pump. If the balloon does not pop, the reward gets larger. If the balloon pops you get no reward for that balloon and will move on to the next balloon.
+
+(2) Collect the reward for the current balloon. The reward gets added to your total score and you move on to the next balloon.
+
+Try to get the highest score you can. Know that every balloon is different and may pop at different sizes."
+scroll_active = true
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "BBCode", "Size Flags" ]
+
+[node name="NextButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 252.0
+margin_right = 510.0
+margin_bottom = 272.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "NEXT"
+flat = false
+align = 1
+
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/NextButton" to="." method="_on_NextButton_pressed"]
+
+

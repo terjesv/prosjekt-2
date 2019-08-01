@@ -1,0 +1,37 @@
+At the start: Structure of game, visualize the consept, in-game pictures
+
+List and figures to get more magnet of the contents
+
+- Some of the requirements are blurry, so have to think about (fikk ikke med hvilken han snakket om her, men Leif fikk med seg det)
+	
+
+- Cut some of the details 
+
+- Some of the details are not needed, imagine the examiner will have a limited time to read the report,
+you have to capture his attention, not get him to be lost, you explain things that are not critical for your
+project. Example: "we met the customer every thursdays, but in the beginning it was on mondays", FOCUS ON THE IMPORTANT
+IF SHORTER, OK, NOT NEED TO FILL UP 50 PAGES.
+
+- In the description of game play, CUT SOME HERE. You show game to examiner before report, so can assume he knows the game before!
+
+- What we don't want is a section where we report the defintion consepts
+	- What is useful is how you implement this consept in the project. Map it to our project. 
+
+- On page 15. / page 16 i would drop it completely, what's the 
+
+- Here and there, include code snippets (3-4 lines) examples of unit tests.
+
+- Include some of the parts in the whole rapport, don't break reading flow. 
+	And for rest of user stories, go in appendix if want to see more...
+
+- Dark patterns. You included the schema at the end of some of them.. But if you include some of the end, include simple facebook dialog scheme to prove the point.
+	The picture is very powerful, its familiar with the facebook dialog and easy to explain.
+		This goes for other concepts
+
+- If need more space, cut out the part where you describe the game dynamics. ____Espacilliay if you show the game DEMO to the examiner!!!!___
+
+- Show a bit of code of 
+
+
+Feedback on report:
+- To Fransesco: Point out sections that has been modified and want to have feedback on (Before end of April)

@@ -1,0 +1,61 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://levels/fighting_level_3/parallax_layers/parallax-mountain-bg.png" type="Texture" id=1]
+[ext_resource path="res://levels/fighting_level_3/parallax_layers/parallax-mountain-montain-far.png" type="Texture" id=2]
+[ext_resource path="res://levels/fighting_level_3/parallax_layers/parallax-mountain-mountains.png" type="Texture" id=3]
+[ext_resource path="res://levels/fighting_level_3/parallax_layers/parallax-mountain-trees.png" type="Texture" id=4]
+[ext_resource path="res://levels/fighting_level_3/parallax_layers/parallax-mountain-foreground-trees.png" type="Texture" id=5]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+scroll_limit_end = Vector2( 0, 364 )
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+position = Vector2( -300, 30 )
+motion_scale = Vector2( 0, 1 )
+motion_mirroring = Vector2( 598, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer"]
+scale = Vector2( 2.2, 2.2 )
+texture = ExtResource( 1 )
+centered = false
+region_rect = Rect2( 0, 0, 200, 200 )
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.2, 1 )
+motion_mirroring = Vector2( 598, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer2"]
+scale = Vector2( 2.2, 2.2 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+position = Vector2( 0, 32 )
+motion_scale = Vector2( 0.4, 1 )
+motion_mirroring = Vector2( 1196, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer3"]
+scale = Vector2( 2.2, 2.2 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
+position = Vector2( 0, 32 )
+motion_scale = Vector2( 0.6, 1 )
+motion_mirroring = Vector2( 1196, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer4"]
+scale = Vector2( 2.2, 2.2 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="."]
+position = Vector2( 0, 32 )
+motion_scale = Vector2( 0.8, 1 )
+motion_mirroring = Vector2( 1196, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer5"]
+scale = Vector2( 2.2, 2.2 )
+texture = ExtResource( 5 )
+centered = false
+

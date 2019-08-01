@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bensound-love.ogg-218b172fb28c97e3918030132b7b4f75.oggstr"
+
+[deps]
+
+source_file="res://levels/common/assets/sounds/bensound-love.ogg"
+dest_files=[ "res://.import/bensound-love.ogg-218b172fb28c97e3918030132b7b4f75.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,58 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://entities/player/player_arrow.gd" type="Script" id=1]
+[ext_resource path="res://entities/enemies/goblinasset/arrow_1.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 11.6212, 3.21705 )
+
+[node name="rigthball" type="KinematicBody2D" groups=[
+"Projectile",
+]]
+
+input_pickable = false
+collision_layer = 2
+collision_mask = 2
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+_sections_unfolded = [ "Collision" ]
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+position = Vector2( 1.53876, 0 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="." index="1"]
+
+position = Vector2( 1.41771, -0.209813 )
+rotation = -0.00218325
+scale = Vector2( 1.00126, 0.221156 )
+rect = Rect2( -10, -10, 20, 20 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="." index="2"]
+
+position = Vector2( 1.60595, -0.47234 )
+shape = SubResource( 1 )
+
+[node name="Area2D" type="Area2D" parent="." index="3"]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( -11.0511, -4.16173, 13.8885, -4.5396, 13.8885, 4.05698, -11.24, 3.77358 )
+
+[connection signal="viewport_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_viewport_exited"]
+
+

@@ -1,0 +1,25 @@
+[gd_scene format=2]
+
+[node name="VBoxContainer" type="VBoxContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Label" type="Label" parent="."]
+margin_right = 544.0
+margin_bottom = 48.0
+size_flags_vertical = 2
+text = "In exchange we want some permissions from you: read the phone state (required) and read calendar data.
+"
+autowrap = true
+
+[node name="Scene3Manage" type="Button" parent="."]
+margin_top = 262.0
+margin_right = 544.0
+margin_bottom = 282.0
+
+[node name="Scene3Button" type="Button" parent="."]
+margin_top = 286.0
+margin_right = 544.0
+margin_bottom = 306.0
+text = "Continue"
+

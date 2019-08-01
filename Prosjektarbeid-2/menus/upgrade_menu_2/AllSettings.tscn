@@ -1,0 +1,31 @@
+[gd_scene format=2]
+
+[node name="AllSettings" type="VBoxContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="LinkButton" type="LinkButton" parent="."]
+margin_right = 544.0
+margin_bottom = 14.0
+text = "Read contacts (required)"
+
+[node name="LinkButton2" type="LinkButton" parent="."]
+margin_top = 18.0
+margin_right = 544.0
+margin_bottom = 32.0
+text = "Read call log"
+
+[node name="LinkButton3" type="LinkButton" parent="."]
+margin_top = 36.0
+margin_right = 544.0
+margin_bottom = 50.0
+size_flags_vertical = 2
+text = "Read SMS"
+
+[node name="SaveButton" type="Button" parent="."]
+margin_top = 286.0
+margin_right = 544.0
+margin_bottom = 306.0
+size_flags_vertical = 8
+text = "CONTINUE"
+

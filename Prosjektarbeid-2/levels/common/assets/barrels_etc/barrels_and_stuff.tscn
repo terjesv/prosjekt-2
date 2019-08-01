@@ -1,0 +1,54 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://levels/common/assets/cave_tileset.png" type="Texture" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 196, 168, 24, 24 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Sprite2" type="Sprite" parent="." index="1"]
+
+position = Vector2( 44.4531, -0.440132 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 196, 200, 24, 24 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Sprite3" type="Sprite" parent="." index="2"]
+
+position = Vector2( 85.8253, 0.440132 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 192, 136, 32, 24 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Sprite4" type="Sprite" parent="." index="3"]
+
+position = Vector2( 169.01, 0.880257 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 230, 128, 20, 30 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Sprite5" type="Sprite" parent="." index="4"]
+
+position = Vector2( 235.91, 1.32039 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 256, 216, 30, 8 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Sprite6" type="Sprite" parent="." index="5"]
+
+position = Vector2( 295.327, 0.880257 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 224, 176, 32, 48 )
+_sections_unfolded = [ "Region" ]
+
+

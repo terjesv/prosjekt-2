@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Fantastic A.ogg-593e51de9ebe0fb90f55911bfea36696.oggstr"
+
+[deps]
+
+source_file="res://levels/common/assets/sounds/Fantastic A.ogg"
+dest_files=[ "res://.import/Fantastic A.ogg-593e51de9ebe0fb90f55911bfea36696.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
